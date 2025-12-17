@@ -1,8 +1,9 @@
 import { Routes } from '@angular/router';
+import { HomeModule } from './modules/home-module/home-module';
 
 export const routes: Routes = [
     {
         path: "",
-        loadChildren: () => import("./features/home/home-module").then(m => m.HomeModule)
+        component: HomeModule
     }
 ];
